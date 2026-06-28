@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MindCare AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body
+
+<script>
+  window.wxOConfiguration = {
+    orchestrationID: "a346ebe61cad43249a5bbd67d7c927e3_2b81cfe7-fe42-47da-99ec-9e73324413e6",
+    hostURL: "https://au-syd.watson-orchestrate.cloud.ibm.com",
+    rootElementID: "root",
+    deploymentPlatform: "ibmcloud",
+    crn: "crn:v1:bluemix:public:watsonx-orchestrate:au-syd:a/a346ebe61cad43249a5bbd67d7c927e3:2b81cfe7-fe42-47da-99ec-9e73324413e6::",
+    chatOptions: {
+        agentId: "9dd028ea-ee5c-4e3e-a1f8-2aa625b50ce3", 
+    }
+  };
+  setTimeout(function () {
+    const script = document.createElement('script');
+    script.src = `${window.wxOConfiguration.hostURL}/wxochat/wxoLoader.js?embed=true`;
+    script.addEventListener('load', function () {
+        wxoLoader.init();
+    });
+    document.head.appendChild(script);
+  }, 0);                     
+</script>
+
+
+
+{
+background:#f5fbff;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#0077ff,#00d4ff);
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+position:sticky;
+top:0;
+}
+
+header h2{
+font-size:30px;
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+color:white;
+font-weight:600;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?auto=format&fit=crop&w=1500&q=80');
+background-size:cover;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+margin-top:20px;
+font-size:22px;
+}
+
+button{
+margin-top:35px;
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:#00d4ff;
+color:white;
+cursor:pointer;
+transition:.4s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+section{
+padding:70px 8%;
+}
+
+.title{
+text-align:center;
+font-size:38px;
+margin-bottom:50px;
+color:#0077ff;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.4s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-12px);
+}
+
+.card h3{
+margin:20px 0;
+color:#0077ff;
+}
+
+.chat{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+max-width:800px;
+margin:auto;
+}
+
+.message{
+padding:15px;
+margin:15px 0;
+border-radius:15px;
+}
+
+.user{
+background:#d8f2ff;
+}
+
+.ai{
+background:#dfffe4;
+}
+
+.dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.stat{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.progress{
+height:15px;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+margin-top:15px;
+}
+
+.bar{
+height:100%;
+width:80%;
+background:#00c853;
+}
+
+footer{
+background:#0077ff;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h2>🧠 MindCare AI</h2>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Features</a>
+<a href="#">Support</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Agentic AI for Mental Health</h1>
+
+<p>Your intelligent companion for emotional wellness and suicide prevention.</p>
+
+<button>Get Started</button>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Why Mental Health Matters</h2>
+
+<div class="grid">
+
+<div class="card">
+<h1>🌿</h1>
+<h3>Mindfulness</h3>
+<p>Practice breathing, meditation and relaxation exercises daily.</p>
+</div>
+
+<div class="card">
+<h1>💙</h1>
+<h3>Depression Support</h3>
+<p>Learn symptoms and receive supportive AI conversations.</p>
+</div>
+
+<div class="card">
+<h1>😊</h1>
+<h3>Positive Habits</h3>
+<p>Develop healthy routines to improve emotional wellbeing.</p>
+</div>
+
+<div class="card">
+<h1>🤝</h1>
+<h3>Community Help</h3>
+<p>Connect with professionals and trusted support networks.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">AI Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🤖 Early Detection (RAG)</h3>
+<p>Detect emotional distress using AI-powered Retrieval-Augmented Generation.</p>
+</div>
+
+<div class="card">
+<h3>💬 Empathetic Chatbot</h3>
+<p>Talk anytime with an AI companion that listens and responds compassionately.</p>
+</div>
+
+<div class="card">
+<h3>📈 Stress Prediction</h3>
+<p>Analyze mood trends and forecast future stress levels.</p>
+</div>
+
+<div class="card">
+<h3>🚨 Emergency Alerts</h3>
+<p>Notify trusted contacts or healthcare providers with user consent.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">AI Conversation Demo</h2>
+
+<div class="chat">
+
+<div class="message user">
+👤 I have been feeling lonely lately...
+</div>
+
+<div class="message ai">
+🤖 I'm here to listen. Would you like to share what has been making you feel this way? Remember, I'm here for support but I'm not a substitute for professional medical care.
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Mental Wellness Dashboard</h2>
+
+<div class="dashboard">
+
+<div class="stat">
+<h3>Stress Level</h3>
+
+<div class="progress">
+<div class="bar"></div>
+</div>
+
+<p>80%</p>
+
+</div>
+
+<div class="stat">
+<h3>Mood Trend</h3>
+<h1>😊 😐 😔 😔</h1>
+</div>
+
+<div class="stat">
+<h3>Sleep</h3>
+<h1>6.2 Hours</h1>
+</div>
+
+<div class="stat">
+<h3>Risk Status</h3>
+<h1 style="color:red;">Moderate</h1>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Emergency Support</h2>
+
+<div class="grid">
+
+<div class="card">
+<h1>☎️</h1>
+<h3>24×7 Helpline</h3>
+<p>Immediate emotional assistance whenever needed.</p>
+</div>
+
+<div class="card">
+<h1>👨‍⚕️</h1>
+<h3>Professional Counselors</h3>
+<p>Book confidential counseling sessions with experts.</p>
+</div>
+
+<div class="card">
+<h1>🏥</h1>
+<h3>Nearby Support</h3>
+<p>Locate trusted hospitals and mental health centers.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p><b>Disclaimer:</b> This AI provides emotional support and educational information only. It is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+
+<p>© 2026 MindCare AI</p>
+
+</footer>
+
+</body>
+</html>
